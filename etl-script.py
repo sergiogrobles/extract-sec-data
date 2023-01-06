@@ -7,7 +7,7 @@ def extract_balancesSheet_variables(metric, allFilesExtracted:dict):
     '''
     
     # import pandas to transform parsed data structure into a Dataframe
-    from pandas import DataFrame as pd_df
+    import pandas as pd
     
     # a local library for plotting 
     from plot import plotTemplate
