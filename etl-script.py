@@ -26,7 +26,7 @@ def extract_balancesSheet_variables(metric, allFilesExtracted:dict):
         'totalInventory': [] # totalInventory: Append the values of the variable being extracted
     }
         
-    # list comprehension and cast into tuple IF wanting to use module functools.lru_cache; variabl companyArray, contains name of companies
+    # list comprehension and cast into tuple IF wanting to use module functools.lru_cache; variable companyArray, contains name of companies
     companyArray = tuple([companies for companies in allFilesExtracted.keys()])
     
     # move through companyArray using index
@@ -41,7 +41,7 @@ def extract_balancesSheet_variables(metric, allFilesExtracted:dict):
     opened = False
     
     # when data for a company and variable is done being extracted, move to next index for a new variable
-    metricIndexer = 0 # add 1 to switch from equity to assets in open()
+    metricIndexer = 0
     
     # metric indexer will move through this tuple of variables  required for a user-defined metric
     metricArray = tuple(['AssetsCurrent', 'LiabilitiesCurrent', 'InventoryNet'])
