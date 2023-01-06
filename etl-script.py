@@ -12,7 +12,7 @@ def extract_balancesSheet_variables(metric, allFilesExtracted:dict):
     # a local library for plotting 
     from plot import plotTemplate
     
-    # create dictionary with keys: names of variables wishing to be extracted; values: values of variables being extracted
+    # create dictionary with keys: names of companies wishing to be extracted; values: values of variables being extracted in JSON a data structure
     
     hash_ = {
         'Date': [], # Date: The dates the filing is for, in regards to the fiscal period
